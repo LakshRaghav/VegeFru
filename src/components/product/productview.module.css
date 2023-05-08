@@ -1,0 +1,239 @@
+.jcc
+{
+    justify-content: center;
+}
+.df
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.wi1
+{
+    width: 10%;
+}
+.wi15
+{
+    width: 15%;
+}
+.wi2
+{
+    width: 20%;
+}
+.wi3
+{
+    width: 30%;
+}
+.wi4
+{
+    width: 40%;
+}
+.wi5
+{
+    width: 50%;
+}
+.wi6
+{
+    width: 60%;
+}
+.wi7
+{
+    width: 70%;
+}
+.wi8
+{
+    width: 80%;
+}
+.wi85
+{
+    width: 85%;
+}
+.wi9{
+    width: 90%;
+}
+.wi10
+{
+    width: 100%;
+}
+.navbar
+{
+    background-color: rgb(0, 0, 0);
+}
+.logo
+{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+}
+.logo:hover
+{
+    color: green;
+}
+.drpdwn
+{
+    display: inline-block;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+}
+.toggle
+{
+    font-size: 17px;
+    margin-left: 15px;
+    padding: 0%;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+}
+.toggle:hover
+{
+    background-color: transparent;
+    color: black;
+}
+.incdec
+{
+    display: inline-block;
+    width: 18%;
+    border-radius: 10px;
+    margin-right: 10%;
+    text-align: center;
+    border: 1px solid rgb(194, 194, 194);
+}
+.incdec:hover
+{
+    box-shadow: 1px 1px 5px rgb(136, 136, 136);
+}
+.incdec1
+{
+    display: inline-block;
+    padding: 0%;
+    margin: 0% 15% 0% 15%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.incdecbtn
+{
+    padding: 0% 5% 0% 5%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: rgb(95, 95, 95);
+    font-size: 30px;
+}
+.incdecbtn:hover
+{
+    color: rgb(0, 0, 0);
+}
+.heading
+{
+    font-size: 38px;
+    padding: 0%;
+    margin: 0%;
+}
+.star
+{
+    font-size: 20px;
+    color: rgb(243, 186, 0);
+}
+.review
+{
+    font-size: 12px;
+    padding: 0%;
+    margin: 0%;
+}
+.price
+{
+    font-size: 22px;
+    font-weight: bold;
+    padding: 2% 0% 1% 0%;
+    margin: 0%;
+}
+.avail
+{
+    font-size: 13px;
+    padding: 0%;
+    margin: 4% 0% 0% 0%;
+    display: inline-block;
+}
+.stock
+{
+    font-size: 13px;
+    padding: 0%;
+    margin: 0% 0% 0% 1%;
+    font-weight: bold;
+    display: inline-block;
+    color: green;
+}
+.product
+{
+    font-size: 14px;
+    padding: 0%;
+    margin: 2% 0% 2.5% 0%;
+}
+.description
+{
+    font-size: 15px;
+    word-wrap: normal;
+    margin: 0% 0% 0% 0%;
+}
+.progress
+{
+    width: 80%;
+    height: 10px;
+}
+.expiry
+{
+    font-size: 13px;
+    padding: 0%;
+    margin: 1% 0% 5% 0%;
+}
+.addtocart
+{
+    padding: 0.5% 8% 0.5% 8%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+}
+.addtocart:hover{
+    box-shadow: 1px 1px 10px black;
+    background-color: rgb(57, 128, 57);
+}
+.linkdiv
+{
+    display: flex;
+    align-items: center;
+    padding: 0%;
+    justify-content: end;
+}
+.navlink
+{
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin: 0% 1% 0% 1%;
+    display: inline-block;
+}
+.navlink:hover
+{
+    color: green;
+}
+.navli
+{
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin: 0% 1% 0% 1%;
+    display: inline-block;
+}
+.navli:hover
+{
+    color: green;
+}
+.navlink3
+{
+    text-align: end;
+}

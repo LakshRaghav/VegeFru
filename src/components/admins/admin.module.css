@@ -1,0 +1,292 @@
+.mt
+{
+    margin-top: 1%;
+}
+.df
+{
+    display: flex;
+}
+.wi_5
+{
+    width: 5%;
+}
+.wi1
+{
+    width: 10%;
+}
+.wi2
+{
+    width: 20%;
+}
+.wi3
+{
+    width: 30%;
+}
+.wi35
+{
+    width: 35%;
+}
+.wi4
+{
+    width: 40%;
+}
+.wi5
+{
+    width: 50%;
+}
+.wi6
+{
+    width: 60%;
+}
+.wi7
+{
+    width: 70%;
+}
+.wi8
+{
+    width: 80%;
+}
+.wi95
+{
+    width: 95%;
+}
+.wi10
+{
+    width: 100%;
+}
+.leftlay
+{
+    background-color: rgb(15, 15, 15);
+    height: 150vh;
+    color: rgb(150, 150, 150);
+    text-align: center;
+}
+.leftlay_text
+{
+    line-height: 8vh;
+    display: block;
+    font-size: 110%;
+    outline: none;
+    border: none;
+    width: 90%;
+    margin: 0% 0% 0% 10%;
+    border-radius: 15px 0px 0px 15px;
+    background-color: rgb(15, 15, 15);
+}
+.leftlay_text:hover
+{
+    background-color: rgb(0, 0, 0);
+}
+.leftlay_icon
+{
+    color: rgb(150, 150, 150);
+}
+.rightlay
+{
+    background-color: rgb(50, 50, 50);
+}
+/* .rightnav{
+    background-color: rgb(255, 255, 73);
+} */
+.rightlay_head
+{
+    font-size: 120%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: antiquewhite;
+    margin-top: 1%;
+}
+.dashhead
+{
+    text-align: end;
+}
+.admin_sign
+{
+    text-align: end;
+}
+.drpdown
+{
+    margin-top: 1%;
+    background-color: rgb(50, 50, 50);
+    border: none;
+    outline: none;
+}
+.drpdown:hover
+{
+    background-color: rgb(0, 0, 0);
+}
+.drpdown::after
+{
+    content: none;
+}
+.name
+{
+    font-size: 70%;
+    color: white;
+    padding: 0%;
+    margin: 0%;
+    text-align: left;
+}
+.email
+{
+    font-size: 70%;
+    color: rgb(122, 122, 122);
+    padding: 0%;
+    margin: 0%;
+    text-align: left;
+}
+.picture
+{
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 19px;
+    background-color: rgb(255, 255, 255);
+}
+.stat_div
+{
+    width: 100%;
+    justify-content: center;
+    margin: 1% 0% 0% 0%;
+}
+.stat1
+{
+    width: 24%;
+    border-radius: 15px;
+    height: 18vh;
+    background-color: rgb(255, 94, 0);
+    /* border: 1px solid rgb(75, 255, 255); */
+    box-shadow: 2px 1px 15px rgb(255, 94, 0);
+    margin: 0% 1% 0% 2%;
+}
+.stat2
+{
+    width: 24%;
+    border-radius: 15px;
+    height: 18vh;
+    background-color: rgb(238, 255, 0);
+    box-shadow: 2px 1px 15px rgb(238, 255, 0);
+    margin: 0% 1% 0% 0%;
+}
+.stat3
+{
+    width: 24%;
+    border-radius: 15px;
+    height: 18vh;
+    background-color: rgb(0, 140, 255);
+    box-shadow: 2px 1px 15px rgb(0, 140, 255);
+    margin: 0% 1% 0% 0%;
+}
+.stat4
+{
+    width: 24%;
+    border-radius: 15px;
+    height: 18vh;
+    background-color: rgb(204, 0, 255);
+    box-shadow: 2px 1px 15px rgb(204, 0, 255);
+    margin: 0% 2% 0% 0%;
+}
+.stat_para
+{
+    color: rgb(35, 35, 35);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 5% 0% 0% 5%;
+    padding: 0%;
+}
+.stat_para2
+{
+    color: rgb(35, 35, 35);
+    padding: 0%;
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0% 0% 0% 20%;
+}
+.stat_link
+{
+    text-decoration: underline;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    margin: 2% 0% 0% 5%;
+}
+.graph_sales
+{
+    color: rgb(233, 233, 233);
+    font-size: 17px;
+    margin-left: 2%;
+    font-weight: bold;
+}
+.graph
+{
+    margin: 1% 1% 0% 2%;
+    width: 70%;
+    padding: 2%;
+    background-color: rgb(20, 20, 20);
+    border-radius: 20px;
+}
+.barchart
+{
+    padding: 2% 2% 1% 0%;
+    margin: 1% 1% 0% 2%;
+    background-color: rgb(20, 20, 20);
+    height: 50vh ;
+    width: 25%;
+    border-radius: 20px;
+}
+.bar
+{
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+}
+.yaxis
+{
+    font-size: 10px;
+}
+.orders
+{
+    margin: 1% 2% 0% 1%;
+    background-color: rgb(20, 20, 20);
+    height: 50vh ;
+    width: 75%;
+    border-radius: 20px;
+}
+.customer
+{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.customer_box
+{
+    border-bottom: 1px solid rgb(107, 107, 107);    
+}
+.customer_box2
+{
+    border-bottom: 1px solid rgb(107, 107, 107);  
+}
+.cust_head
+{
+    color: rgb(120, 120, 120);
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+.cust_field
+{
+    color: rgb(200, 200, 200);
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+.outerdv
+{
+    height : 250px;
+    scrollbar-color: dark;
+}
+.innerdv
+{
+    height     : 80%;
+    overflow-y : auto;
+}

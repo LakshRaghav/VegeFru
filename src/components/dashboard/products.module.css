@@ -1,0 +1,227 @@
+.jcc
+{
+    justify-content: center;
+}
+.df
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.wi1
+{
+    width: 10%;
+}
+.wi15
+{
+    width: 15%;
+}
+.wi2
+{
+    width: 20%;
+}
+.wi3
+{
+    width: 30%;
+}
+.wi4
+{
+    width: 40%;
+}
+.wi5
+{
+    width: 50%;
+}
+.wi6
+{
+    width: 60%;
+}
+.wi7
+{
+    width: 70%;
+}
+.wi8
+{
+    width: 80%;
+}
+.wi85
+{
+    width: 85%;
+}
+.wi9{
+    width: 90%;
+}
+.wi10
+{
+    width: 100%;
+}
+.navbar
+{
+    padding: 0.5% 1% 0.5% 1%;
+    background-color: green;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.logo
+{
+    text-align: left;
+}
+.logoname
+{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(228, 228, 228);
+    padding: 0%;
+    margin: 0%;
+}
+.linkbar
+{
+    text-align: end;
+}
+.navlink
+{
+    text-decoration: none;
+    margin: 0% 1% 0% 1%;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+}
+.navlink:hover{
+    color: rgb(0, 0, 0);
+}
+.drpdwn
+{
+    display: inline-block;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+}
+.toggle
+{
+    font-size: 17px;
+    margin-left: 15px;
+    padding: 0%;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+}
+.toggle:hover
+{
+    background-color: transparent;
+    color: black;
+}
+.logout
+{
+    background-color: black;
+    border-radius: 20px;
+    padding: 1% 10% 1% 10%;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+.leftside
+{
+    height: 93vh;
+    padding: 1%;
+    background-color: rgb(206, 255, 226);
+    position: sticky;
+    top: 7%;
+}
+.rightside
+{
+    height: 100%;
+    border-left: 2px solid rgb(153, 153, 153);
+    padding: 1%;
+}
+.card
+{
+    width: 19%;
+    height: 65vh;
+    margin: 0.5% 0.5% 0.5% 0.5%;
+    border-radius: 20px;
+    background-color: rgb(230, 230, 230);
+    position: relative;
+}
+.offericon
+{
+    right: 0;
+    top: 0;
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 0px 4px 0px 4px;
+    color: rgb(255, 255, 255);
+}
+.icon
+{
+    color: rgb(255, 255, 255);
+}
+.card_image
+{
+    width: 100%;
+    height: 35vh;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.card_body
+{
+    height: 30px;
+}
+.card_title
+{
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0%;
+    margin: 0%;
+}
+.card_price
+{
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0%;
+    margin: 0%;
+    height: 30px;
+}
+.card_text
+{
+    font-size: 11px;
+    color: rgb(41, 41, 41);
+}
+.offer
+{
+    display: inline-block;
+}
+.offer1
+{
+    display: inline-block;
+    margin: 0% 0% 0% 5px;
+    text-decoration: line-through;
+}
+.subdesc
+{
+    padding: 0%;
+    margin: 0% 0% 2% 0%;
+}
+.card_button
+{
+    padding: 2% 15% 2% 15%;
+    margin: 4% 0% 0% 0%;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+}
+.card_button:hover
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(30, 105, 0);
+    box-shadow: 1px 1px 8px black;
+}

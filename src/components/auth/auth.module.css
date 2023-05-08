@@ -1,0 +1,187 @@
+.jcc
+{
+    justify-content: center;
+}
+.df
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.wi1
+{
+    width: 10%;
+}
+.wi2
+{
+    width: 20%;
+}
+.wi3
+{
+    width: 30%;
+}
+.wi35
+{
+    width: 35%;
+}
+.wi4
+{
+    width: 40%;
+}
+.wi5
+{
+    width: 50%;
+}
+.wi6
+{
+    width: 60%;
+}
+.wi7
+{
+    width: 70%;
+}
+.wi8
+{
+    width: 80%;
+}
+.wi9{
+    width: 90%;
+}
+.wi95
+{
+    width: 95%;
+}
+.wi10
+{
+    width: 100%;
+}
+.login_page
+{
+    position: relative;
+}
+.leftdiv
+{
+    height: 100vh;
+    background-color: rgb(230, 230, 230);
+}
+.rightdiv
+{
+    height: 100vh;
+    background-color: rgb(168, 241, 158);
+}
+.login_image
+{
+    position: absolute;
+    bottom: 8%;
+    right: 20%;
+}
+.login_backgrnd
+{
+    position: absolute;
+    z-index: -1;
+}
+.login_div
+{
+    padding: 7% 0% 0% 5%;
+    position: relative;
+}
+.logo
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2%;
+    color: rgb(0, 189, 57);
+}
+.logo:hover
+{
+    color: green;
+}
+.login
+{
+    height: 60vh;
+    background-color: rgb(194, 194, 194);
+    border-radius: 20px;
+    padding: 10%;
+    position: relative;
+}
+.link
+{
+    font-size: 15px;
+    position: absolute;
+    top: 8%;
+    left: 10%;
+}
+.input
+{
+    padding: 1%;
+    width: 60%;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    margin: 2% 0% 0% 12%;
+    display: block;
+    background-color: rgb(236, 236, 236);
+    border: 1px solid rgb(216, 216, 216);
+}
+.input:hover
+{
+    border: 1px solid rgb(110, 110, 110);
+    box-shadow: 1px 2px 15px rgb(160, 160, 160);
+}
+.label
+{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(43, 43, 43);   
+    margin: 2% 0% 0% 12%;
+    padding: 0%;
+}
+.input_btn
+{
+    padding: 1% 10% 1% 10%;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin: 4% 0% 0% 12%;
+}
+.signup_div
+{
+    padding: 7% 0% 0% 5%;
+    position: relative;
+}
+.signup
+{
+    height: 78vh;
+    background-color: rgb(194, 194, 194);
+    border-radius: 20px;
+    padding: 1%;
+    padding-top: 4.5%;
+    position: relative;
+}
+.link1
+{
+    font-size: 15px;
+    position: absolute;
+    top: 2%;
+    left: 10%;
+}
+.input1
+{
+    padding: 1%;
+    width: 60%;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    margin: 0% 0% 0% 12%;
+    display: block;
+    background-color: rgb(236, 236, 236);
+    border: 1px solid rgb(216, 216, 216);
+}
+.input1:hover{
+    border: 1px solid rgb(110, 110, 110);
+    box-shadow: 1px 2px 15px rgb(160, 160, 160);
+}
