@@ -82,6 +82,13 @@
     position: absolute;
     top: 0;
 }
+.dashbackpic
+{
+    background-image: url("../../../public/dashboard1.jpg");
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+}
 .navbar
 {
     width: 100%;
@@ -554,20 +561,21 @@
 }
 .contact
 {
+    flex-wrap: wrap;
     height: 110vh;
     align-items: center;
     background-color: rgb(255, 255, 255);
+    position: relative;
 }
 .contact_image
 {
-    height: 510px;
+    height: 85vh;
     width: 100%;
     background-image: url("../../../public/dashboard.webp");
     background-size: 100% 115%;
     background-repeat: no-repeat;
     box-shadow: 1px 1px 40px rgb(107, 107, 107);
     align-items: center;
-    position: relative;
 }
 .contact_heading
 {
@@ -577,17 +585,20 @@
     margin: 1% 0% 1% 0%;
     color: rgb(0, 0, 0);
     top: 0;
+    left: 43%;
+    text-align: center;
 }
 .contact_info
 {
     align-items: center;
+    height: 70vh;
     border-radius: 20px;
     box-shadow: 1px 1px 15px rgb(112, 112, 112);
 }
 .map
 {
     background-color: rgb(218, 218, 218);
-    height: 65vh;
+    height: 70vh;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     width: 50%;
@@ -597,7 +608,7 @@
 {
     padding: 2%;
     background-color: rgb(255, 255, 255);
-    height: 65vh;
+    height: 70vh;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     width: 50%;

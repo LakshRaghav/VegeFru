@@ -38,7 +38,8 @@ export default function Dashboard(props) {
                 <p className={style.logoname}>VEGEFRUIT</p>
                 <div className={`${style.banner} ${style.df} ${style.wi10}`}>
                     <div className={`${style.wi10} ${style.image2}`}>
-                        <Image src={"/dashboard1.jpg"} alt="" width={1350} height={590} />
+                        {/* <Image src={"/dashboard1.jpg"} alt="" width={1350} height={590} /> */}
+                        <div className={style.dashbackpic}></div>
                     </div>
                 </div>
                 <div className={`${style.wi10}`}>
@@ -92,7 +93,7 @@ export default function Dashboard(props) {
                         </div>
                     </div>
                 </div>
-                <div id="about" className={`${style.wi10} ${style.df} ${style.jcc}`}>
+                <div id="about" className={`${style.wi10} ${style.df} ${style.jcc} pt-3`}>
                     <div className={`${style.wi8} ${style.about}`}>
                         <h2 className={style.heading}>About Us</h2>
                         <p className={`${style.about_para} mt-4`}>The best in providing one of the best quality fruits vegetables and various juices.</p>
@@ -209,11 +210,10 @@ export default function Dashboard(props) {
                     </div>
                 </div>
                 <div id="contact" className={`${style.wi10} ${style.contact} ${style.df}`}>
-                    <div className={`${style.contact_image} ${style.df} ${style.jcc}`}>
-                        <h3 className={style.contact_heading}>Contact us</h3>
+                <h3 className={style.contact_heading}>Contact us</h3>
+                    <div className={`${style.contact_image} ${style.df} ${style.jcc}`}>                        
                         <div className={`${style.wi8} ${style.contact_info} ${style.df}`}>
                             <div className={style.map}>
-
                             </div>
                             <div className={style.contact_form}>
                                 <form>

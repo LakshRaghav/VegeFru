@@ -14,7 +14,7 @@ import { getStorage } from "@/components/api/constant";
 
 function ShopProducts() {
 
-    const { cartData, addToCart, removeFromCart, data, context } = useContext(Globalcontext)
+    const { cartData, addToCart, removeFromCart, re, data, context } = useContext(Globalcontext)
     const [subtotal, setsubtotal] = useState({ price: 0, quantity: 0 ,total_item: 0 });
     var initial_user = {
         first_name: "",
@@ -32,14 +32,15 @@ function ShopProducts() {
 
     function removeItem(id) {
         removeFromCart(cartData[id])
-        subto();
+    }
+    function Delete(id) {
+        re(cartData[id])
     }
     const addItem=(id)=> {
         console.log(cartData[id])
         addToCart(cartData[id], 1);
-        subto();
       }
-    function subto() {
+    const subto=()=>{
         var arr = cartData.map((items) => items.price * items.qty);
         var arr1 = cartData.map((items)=>items.qty);
         var sum = 0;
@@ -66,7 +67,7 @@ function ShopProducts() {
                             <div className={style.rightnav}>
                                 <Link href="/" className={style.navlink}>Home</Link>
                                 <Link href="/#about" className={style.navlink}>About</Link>
-                                <Link href="/#contact" className={style.navlink}>Contact</Link>
+                                <Link href="/products" className={style.navlink}>Product</Link>
                                 {data.auth == 0 ?
                                     <Link href="/login" className={style.navlink1}>LogIn | Register</Link>
                                     :
@@ -99,25 +100,25 @@ function ShopProducts() {
                                             </div>
                                             <div className="col-md-3 col-lg-3 col-xl-3">
                                                 <p className="lead fw-normal mb-2">{cart.name}</p>
-                                                <p><span className="text-muted">Size: </span>  <span className="text-muted">Color : {cart.color} </span></p>
+                                                <p><span className="text-muted">Offer % :</span>  <span className="text-muted">{`${cart.offer}%`} </span></p>
                                             </div>
                                             <div className="col-md-3 col-lg-3 col-xl-2 d-flex">
-                                                <button className="btn btn-link px-2" onClick={()=>{removeItem(index)}}>
+                                                <button className="btn btn-link px-2" onClick={()=>{removeItem(index),subto()}}>
                                                     <FiMinus />
                                                 </button>
 
                                                 <input id="form1" min="0" name="quantity" value={cart.qty} type="number"
                                                     className="form-control form-control-sm" />
 
-                                                <button className="btn btn-link px-2" onClick={()=>{addItem(index)}}>
+                                                <button className="btn btn-link px-2" onClick={()=>{addItem(index),subto()}}>
                                                     <BsPlusLg />
                                                 </button>
                                             </div>
                                             <div className="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                                                <h5 className="mb-0">${(cart.price) * (cart.qty)}</h5>
+                                                <h5 className="mb-0">₹{((((cart.price)) * (cart.qty))-(((cart.offer)*((cart.price)*(cart.qty)))*0.01))}</h5>
                                             </div>
                                             <div className="col-md-1 col-lg-1 col-xl-1 text-end">
-                                                <MdDelete onClick={removeItem} />
+                                                <MdDelete onClick={()=>{Delete(index)}} />
                                             </div>
                                         </div>
                                     </div>

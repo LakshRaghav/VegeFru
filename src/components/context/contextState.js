@@ -52,6 +52,10 @@ const Globaldata =
             setcartItem(cartItem.map((x) => (x.id == product.id ? {...remove, qty: remove.qty - 1}:x)))
         }
     }
+    function remove(product)
+    {
+            setcartItem(cartItem.filter((x) => x.id !== product.id))
+    }
     useEffect(()=>{
         if(localStorage.getItem("login-info")){
             setglobalstate(getStorage());
@@ -60,7 +64,7 @@ const Globaldata =
     return(
         <>
             <Globalcontext.Provider value={{product:data.data,cartData:cartItem, addToCart:addToCart,
-                 removeFromCart:removeFromCart, data:globalstate, context:contextdata}}>
+                 removeFromCart:removeFromCart, re:remove, data:globalstate, context:contextdata}}>
                 {props.children}
             </Globalcontext.Provider>
         </>

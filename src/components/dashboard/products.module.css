@@ -90,6 +90,18 @@
 .navlink:hover{
     color: rgb(0, 0, 0);
 }
+.navlink1
+{
+    font-size: 16px;
+    margin-left: 15px;
+    padding: 0%;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navlink1:hover{
+    color: rgb(0, 0, 0);
+}
 .drpdwn
 {
     display: inline-block;

@@ -96,7 +96,7 @@ export default function View() {
                 <Link href="/" className={style.navlink}>Home</Link>
                 <Link href="/products" className={style.navlink}>Product</Link>
                 {data.auth == 0 ?
-                  <Link href="/login" className={style.navli}>LogIn | Register</Link>
+                  <Link href="/login" className={style.navlink1}>LogIn | Register</Link>
                   :
                   <Dropdown className={style.drpdwn}>
                     <Dropdown.Toggle className={style.toggle} id="dropdown-basic">
@@ -143,8 +143,7 @@ export default function View() {
                   <button className={style.incdecbtn} onClick={plus}>+</button>
                 </div>
                 <button className={style.addtocart} onClick={addCart}>Add To Cart</button>
-              </div>
-            
+              </div>    
           
         </div>
       </div>
