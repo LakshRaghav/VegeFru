@@ -41,7 +41,7 @@ function ShopProducts() {
         addToCart(cartData[id], 1);
       }
     const subto=()=>{
-        var arr = cartData.map((items) => items.price * items.qty);
+        var arr = cartData.map((items) => ((((items.price)) * (items.qty))-(((items.offer)*((items.price)*(items.qty)))*0.01)));
         var arr1 = cartData.map((items)=>items.qty);
         var sum = 0;
         var sumqty = 0;

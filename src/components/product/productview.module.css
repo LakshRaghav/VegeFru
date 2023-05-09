@@ -249,3 +249,9 @@
 {
     text-align: end;
 }
+.offer1
+{
+    display: inline-block;
+    margin: 0% 0% 0% 5px;
+    text-decoration: line-through;
+}
