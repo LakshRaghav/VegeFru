@@ -121,7 +121,10 @@ export default function View() {
                 <p className={`${style.review}`}><AiOutlineStar className={style.star} />
                   <AiOutlineStar className={style.star} /><AiOutlineStar className={style.star} />
                   <AiOutlineStar className={style.star} /><AiOutlineStar className={style.star} />0 review</p>
-                <h5 className={style.price}>{`₹ ${(pro.price)-(((pro.offer)*pro.price)*0.01)} / ${pro.unit}`}<p className={style.offer1}>{`${pro.price} / ${pro.unit}`}</p></h5>
+                  {pro.offer=0?<h5 className={style.price}>{`₹ $(pro.price)</h5>
+:<h5 className={style.price}>{`₹ ${(pro.price)-(((pro.offer)*pro.price)*0.01)} / ${pro.unit}`}<p className={style.offer1}>{`${pro.price} / ${pro.unit}`}</p></h5>
+}
+                
                 {pro.offer == 0?<></>:<p style={{color:"red"}}> offer: {pro.offer}%OFF</p>}
                 <p className={`${style.product}`}>Product: {pro.product_name}</p>
                 <p className={`${style.description}`}>{pro.description}</p>
