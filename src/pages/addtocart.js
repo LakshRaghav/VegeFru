@@ -14,8 +14,8 @@ import { getStorage } from "@/components/api/constant";
 
 function ShopProducts() {
 
-    const { cartData, addToCart, removeFromCart, re, data, context } = useContext(Globalcontext)
-    const [subtotal, setsubtotal] = useState({ price: 0, quantity: 0 ,total_item: 0 });
+    const { cartData, addToCart, removeFromCart, re, data, context, subtot, totalSum } = useContext(Globalcontext)
+   
     var initial_user = {
         first_name: "",
         email: "",
@@ -37,23 +37,11 @@ function ShopProducts() {
         re(cartData[id])
     }
     const addItem=(id)=> {
-        console.log(cartData[id])
         addToCart(cartData[id], 1);
       }
-    const subto=()=>{
-        var arr = cartData.map((items) => ((((items.price)) * (items.qty))-(((items.offer)*((items.price)*(items.qty)))*0.01)));
-        var arr1 = cartData.map((items)=>items.qty);
-        var sum = 0;
-        var sumqty = 0;
-        for (let i = 0; i < arr.length; i++) {
-            sum += arr[i];
-            sumqty += arr1[i];
-        }
-        setsubtotal({ ...subtotal, price:sum, quantity:cartData.length, total_item:sumqty })
-    }
     useEffect(() => {
         getmydata()
-        subto();
+        totalSum()
     }, [])
     return (
         <>
@@ -103,14 +91,14 @@ function ShopProducts() {
                                                 <p><span className="text-muted">Offer % :</span>  <span className="text-muted">{`${cart.offer}%`} </span></p>
                                             </div>
                                             <div className="col-md-3 col-lg-3 col-xl-2 d-flex">
-                                                <button className="btn btn-link px-2" onClick={()=>{removeItem(index),subto()}}>
+                                                <button className="btn btn-link px-2" onClick={()=>removeItem(index)}>
                                                     <FiMinus />
                                                 </button>
 
                                                 <input id="form1" min="0" name="quantity" value={cart.qty} type="number"
                                                     className="form-control form-control-sm" />
 
-                                                <button className="btn btn-link px-2" onClick={()=>{addItem(index),subto()}}>
+                                                <button className="btn btn-link px-2" onClick={()=>addItem(index)}>
                                                     <BsPlusLg />
                                                 </button>
                                             </div>
@@ -130,20 +118,20 @@ function ShopProducts() {
                             <div className="col-lg-4 col-xl-3 ms-auto" >
                                 <div className="d-flex content justify-content-between" >
                                     <p className="mb-2 me-4">Subtotal:</p>
-                                    <p className="mb-2 me-2">₹ {subtotal.price}</p>
+                                    <p className="mb-2 me-2">₹ {subtot.price}</p>
                                 </div>
                                 <div className="d-flex content justify-content-between" >
                                     <p className="mb-0">Total item:</p>
-                                    <p className="mb-0 me-2">{subtotal.quantity}</p>
+                                    <p className="mb-0 me-2">{subtot.total_item}</p>
                                 </div>
                                 <div className="d-flex content justify-content-between" >
                                     <p className="mb-0 me-5">Total Quantity:</p>
-                                    <p className="mb-0 me-2">{subtotal.total_item}</p>
+                                    <p className="mb-0 me-2">{subtot.quant}</p>
                                 </div>
                             </div>
                                 <div className="card-body d-flex">
                                     <button type="button" className="btn btn-warning btn-block btn-lg">Proceed to Pay</button>
-                                    <h2 className={style.subtotal}>₹ {subtotal.price}</h2>
+                                    <h2 className={style.subtotal}>₹ {subtot.price}</h2>
                                 </div>
                             </div>
                         </div>
